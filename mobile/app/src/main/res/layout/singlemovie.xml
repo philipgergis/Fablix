@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/singleMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="38dp"
+        android:text="Movie Title "
+        app:layout_constraintBottom_toTopOf="@+id/singleMovieDirector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/singleMovieDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="47dp"
+        android:text="Director"
+        app:layout_constraintBottom_toTopOf="@+id/singleMovieYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleMovieTitle" />
+
+    <TextView
+        android:id="@+id/singleMovieYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="27dp"
+        android:text="Release Year"
+        app:layout_constraintBottom_toTopOf="@+id/singleMovieStars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleMovieDirector" />
+
+    <TextView
+        android:id="@+id/singleMovieStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="38dp"
+        android:text="Stars:"
+        app:layout_constraintBottom_toTopOf="@+id/singleMovieGenres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleMovieYear" />
+
+    <TextView
+        android:id="@+id/singleMovieGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="386dp"
+        android:text="Genres:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singleMovieStars" />
+</androidx.constraintlayout.widget.ConstraintLayout>

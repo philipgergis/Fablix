@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Search</title>
+</head>
+
+<body>
+
+<h1>Search</h1>
+<h5 id = "home-link"></h5>
+<h5><a href = "shopping-cart.html?title=&add=0">Cart</a></h5>
+
+<form ACTION="movie-list.html?queryType=search&" METHOD="GET">
+    <input type="hidden" name="queryType" value="search" />
+    <input type="hidden" name="sort" value="rating" />
+    <input type="hidden" name="ratingSort" value="DESC" />
+    <input type="hidden" name="titleSort" value="ASC" />
+    <input type="hidden" name="limitNum" value="25" />
+    <input type="hidden" name="offset" value="0" />
+
+    <input TYPE="SUBMIT" VALUE="Search">
+
+    <label for="searchTitle">Title:</label><br>
+    <input TYPE="TEXT" id="searchTitle" name="searchTitle" size="40" class="autocomplete-searchbox form-control"
+    placeholder="Search for movies."><br>
+<!--    <label for="searchYear">Year:</label><br>-->
+<!--    <input TYPE="NUMBER" id = "searchYear" name="searchYear" size="40"><br>-->
+<!--    <label for="searchDirector">Director:</label><br>-->
+<!--    <input TYPE="TEXT" id = "searchDirector" name="searchDirector" size="40"><br>-->
+<!--    <label for="searchStar">Star:</label><br>-->
+<!--    <input TYPE="TEXT" id = "searchStar" name="searchStar" size="40"><br>-->
+<!--    <input TYPE="SUBMIT" VALUE="Search">-->
+
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="search.js"></script>
+</body>
+</html>

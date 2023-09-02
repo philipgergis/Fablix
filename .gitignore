@@ -1,0 +1,9 @@
+.idea
+*.iml
+.sql
+.jar
+.war
+.apk
+.bin
+.exe
+target/
